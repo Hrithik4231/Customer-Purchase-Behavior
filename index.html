@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDA Visualization Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section with Image and Text -->
+    <header class="content-section">
+        <div class="content-container">
+            <!-- Left Side: Content -->
+            <div class="content-text">
+                <h1>Analyzing Customer Purchase Behavior</h1>
+                <p>
+                    Understanding customer purchase behavior is key to unlocking insights into how consumers make decisions, 
+                    what influences their buying habits, and how businesses can improve their strategies. This dashboard 
+                    explores the trends, patterns, and factors shaping purchasing decisions, offering actionable insights 
+                    to enhance customer engagement and drive business growth.
+                </p>
+            </div>
+            <!-- Right Side: Image -->
+            <div class="content-image">
+                <img src="https://i.ibb.co/q1CLRfJ/dm-20240124-data-analytics-techniques.webp" alt="Data Analytics Techniques">
+            </div>
+        </div>
+    </header>
+
+    <!-- New Section: Understanding Customer Purchase Behavior -->
+    <section class="content-section">
+        <div class="content-container">
+            <!-- Left Side: Image -->
+            <div class="content-image">
+                <img src="https://i.ibb.co/4Ykr4Sm/Understanding-Consumer-Behaviour-with-Web-Analytics.jpg" alt="Understanding Customer Behavior">
+            </div>
+            <!-- Right Side: Content -->
+            <div class="content-text">
+                <h1>Understanding Customer Purchase Behavior</h1>
+                <p>
+                    Analyzing customer purchase behavior helps businesses uncover patterns and trends in consumer decision-making. 
+                    By understanding how and why customers make purchases, businesses can refine their marketing strategies, 
+                    optimize product offerings, and increase customer satisfaction. This analysis considers various factors such as 
+                    psychological, social, and economic influences that shape consumer choices.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upload Dataset Section -->
+    <section id="upload" class="container">
+        <h2>Upload Dataset</h2>
+        <form id="uploadForm">
+            <input type="file" id="fileInput" accept=".csv, .pdf, .doc, .docx">
+            <button id="uploadBtn">Upload</button>
+        </form>
+        <p id="uploadHint">* Upload a CSV, PDF, DOC, or DOCX file to analyze your data</p>
+    </section>
+
+    <!-- Visualizations Section -->
+    <section id="visualizations" class="container">
+        <h2>Visualizations</h2>
+        <div id="charts">
+            <div class="chart" id="histogram">
+                <h3>Distribution of Purchases</h3>
+                <canvas id="histChart"></canvas>
+            </div>
+            <div class="chart" id="scatter">
+                <h3>Age vs Purchases</h3>
+                <canvas id="scatterChart"></canvas>
+            </div>
+            <div class="chart" id="boxplot">
+                <h3>Income Distribution</h3>
+                <canvas id="boxChart"></canvas>
+            </div>
+            <div class="chart" id="heatmap">
+                <h3>Correlation Heatmap</h3>
+                <canvas id="heatmapCanvas"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>EDA Dashboard &copy; 2024</p>
+    </footer>
+</body>
+</html>
+
