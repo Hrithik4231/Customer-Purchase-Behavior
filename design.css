@@ -1,0 +1,166 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0aaff;
+    color: #10002b;
+    line-height: 1.6;
+}
+
+/* Content Section (Header) */
+.content-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 2em;
+    background-color: #10002b;
+    color: #e0aaff;
+    border-bottom: 2px solid #5a189a;
+}
+
+.content-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    gap: 1.5em;
+}
+
+.content-text {
+    flex: 1;
+    min-width: 300px;
+    max-width: 50%;
+}
+
+.content-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+}
+
+.content-text p {
+    font-size: 1.2em;
+    line-height: 1.8;
+}
+
+.content-image {
+    flex: 1;
+    min-width: 300px;
+    max-width: 45%;
+    display: flex;
+    justify-content: center;
+}
+
+.content-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* About Section */
+#about {
+    padding: 2em;
+    background-color: #5a189a;
+    color: #e0aaff;
+    text-align: center;
+}
+
+#about h1 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+}
+
+#about p {
+    font-size: 1.2em;
+    line-height: 1.8;
+}
+
+/* Upload Section */
+#upload {
+    text-align: center;
+    padding: 2em;
+    background-color: #9d4edd;
+    color: #e0aaff;
+}
+
+#fileInput, #uploadBtn {
+    padding: 0.8em;
+    margin: 1em 0;
+    border: 1px solid #240046;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+#uploadBtn {
+    background-color: #7b2cbf;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#uploadBtn:hover {
+    background-color: #240046;
+}
+
+/* Visualizations Section */
+#visualizations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #7b2cbf;
+    padding: 2em;
+    gap: 2em;
+}
+
+.chart {
+    width: 45%;
+    min-width: 300px;
+}
+
+canvas {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    background-color: #10002b;
+    color: #e0aaff;
+    padding: 1.5em 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-text, .content-image {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    #visualizations {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .chart {
+        width: 80%;
+    }
+
+    #fileInput, #uploadBtn {
+        width: 100%;
+    }
+
+    #about h1 {
+        font-size: 1.8em;
+    }
+
+    #about p {
+        font-size: 1em;
+    }
+}
